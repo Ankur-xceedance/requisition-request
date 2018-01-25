@@ -1,0 +1,268 @@
+2018-01-23 17:27:58,303 - app - ERROR - Exception on /clients [GET]
+Traceback (most recent call last):
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\flask_example\microblog\app\routes.py", line 118, in get_client
+    clients = Client.query.client();
+AttributeError: 'BaseQuery' object has no attribute 'client'
+2018-01-23 17:27:58,306 - app - ERROR - 'BaseQuery' object has no attribute 'client'
+2018-01-23 17:31:09,823 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-23 17:35:31,309 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-23 17:39:20,730 - app - ERROR - IntegrityError('(sqlite3.IntegrityError) UNIQUE constraint failed: request.title',)
+2018-01-23 17:41:19,756 - app - ERROR - TypeError('exceptions must derive from BaseException',)
+2018-01-23 17:42:04,329 - app - ERROR - <NotFound '404: Not Found'>
+2018-01-23 17:42:19,156 - app - ERROR - <NotFound '404: Not Found'>
+2018-01-24 11:49:39,603 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 11:49:39,865 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 11:49:40,202 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 11:50:42,797 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 11:51:02,392 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 11:54:18,106 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 11:54:26,839 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\flask_example\microblog\app\routes.py", line 136, in index
+    return render_template('feature-list.html', title='Home')
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: feature-list.html
+2018-01-24 11:54:26,846 - app - ERROR - feature-list.html
+2018-01-24 11:54:26,880 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:02:11,962 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:02:36,260 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:02:36,465 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:02:36,569 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:04:20,990 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:04:21,545 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:04:21,549 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:04:21,770 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:04:24,807 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:04:40,622 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:04:40,624 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:04:40,892 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:08:48,947 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:22:18,250 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:22:18,309 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:22:18,460 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:33:42,090 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:39:05,826 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\flask_example\microblog\app\routes.py", line 137, in index
+    return render_template('feature-list.html', title='Home', user=user)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "E:\flask_example\microblog\app\templates\feature-list.html", line 1, in top-level template code
+    {% extends "BaseApp.html" %}
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: BaseApp.html
+2018-01-24 12:39:05,833 - app - ERROR - BaseApp.html
+2018-01-24 12:51:31,997 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:31,999 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:32,002 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:32,461 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:32,515 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:32,819 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:32,824 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:33,186 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:33,437 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:35,319 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:55,939 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:56,039 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:56,041 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:56,043 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:56,350 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:51:56,375 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:52:32,426 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 12:52:57,650 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 14:54:34,661 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 15:42:54,645 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 15:47:42,044 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 16:01:36,590 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 16:36:17,321 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\flask_example\microblog\app\routes.py", line 139, in index
+    return render_template('feature-list.html', title='Home', user=user)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "E:\flask_example\microblog\app\templates\base.html", line 12, in template
+    <link href="{%static '/css/jquery-ui.css'%}" rel="stylesheet"/>
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "E:\flask_example\microblog\app\templates\feature-list.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "E:\flask_example\microblog\app\templates\base.html", line 12, in template
+    <link href="{%static '/css/jquery-ui.css'%}" rel="stylesheet"/>
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'static'.
+2018-01-24 16:36:17,328 - app - ERROR - Encountered unknown tag 'static'.
+2018-01-24 16:36:18,973 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\flask_example\microblog\app\routes.py", line 139, in index
+    return render_template('feature-list.html', title='Home', user=user)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "e:\flask_example\microblog\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "E:\flask_example\microblog\app\templates\base.html", line 12, in template
+    <link href="{%static '/css/jquery-ui.css'%}" rel="stylesheet"/>
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "E:\flask_example\microblog\app\templates\feature-list.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "E:\flask_example\microblog\app\templates\base.html", line 12, in template
+    <link href="{%static '/css/jquery-ui.css'%}" rel="stylesheet"/>
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "e:\flask_example\microblog\venv\lib\site-packages\jinja2\parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'static'.
+2018-01-24 16:36:18,975 - app - ERROR - Encountered unknown tag 'static'.
+2018-01-24 16:37:05,794 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 16:37:11,720 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 16:37:12,035 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 16:37:12,035 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 16:37:12,044 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 16:37:13,433 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 16:41:54,837 - app - ERROR - KeyError('product_id',)
+2018-01-24 16:53:20,220 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 16:59:44,778 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 17:01:35,306 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 17:03:17,496 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 17:03:51,506 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 17:09:09,405 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 17:09:18,813 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 17:10:22,873 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 17:10:47,611 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 17:19:30,079 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2018-01-24 17:42:32,292 - app - ERROR - 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
