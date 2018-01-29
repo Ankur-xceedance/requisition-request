@@ -4,7 +4,7 @@
 
 $git clone https://github.com/dinesh-xceedance/requisition-request
 
-$cd requisition-request/microblog
+$cd requisition-request
 
 
 #create and activate virtual environment
